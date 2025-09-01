@@ -1,104 +1,113 @@
 // TypeScript
 
-// let num: number = 5;
-// let str: string = "Hello";
-// let boolean: boolean = true;
-
-// function action(main: number): number {
-//   return main + 12;
-// }
-// action(12);
-
-// object
-
-// interface Iperson {
-//   id: number;
-//   name: string;
-//   job: string;
-//   hobby?: string;
-// }
-
-// let person: Iperson = {
-//   id: 1,
-//   name: "Toni Montano",
-//   job: "Gangster",
-// };
-
-// Array
+// let num: number = 312;
+// let str: string = "Bishkek";
+// let bool: boolean = true;
+// let nul: null = null;
 
 // let arr: number[] = [1, 2, 3, 4, 5];
+// let arr: Array<number | string | boolean | null | undefined> = [
+//   1,
+//   "1",
+//   false,
+//   null,
+//   undefined,
+// ];
 
-// interface Iperson {
+// type array = number | string | boolean | null | undefined;
+// let arr: Array<array> = [1, "1", false, null, undefined];
+
+// const getSum = (a: number, b: number): number => {
+//   return a + b;
+// };
+// getSum(1, 5);
+
+// const getSum = (a: number, b: number): void => {
+//   console.log(a + b);
+// };
+// getSum(1, 5);
+
+// interface IObj {
 //   id: number;
 //   name: string;
-//   job: string;
-//   killed: IKilled[];
+//   worked: boolean;
 // }
+
+// const obj: IObj = {
+//   id: 1,
+//   name: "Bill",
+//   worked: true,
+// };
 
 // interface IUsers {
 //   id: number;
 //   name: string;
+//   married: boolean;
 // }
 
-// const users: IUsers[] = [
+// const arr: IUsers[] = [
 //   {
 //     id: 1,
-//     name: "Hulk",
+//     name: "Rin",
+//     married: false,
 //   },
 //   {
 //     id: 2,
-//     name: "Tour",
+//     name: "Hin",
+//     married: false,
 //   },
 //   {
 //     id: 3,
-//     name: "Spider",
+//     name: "Min",
+//     married: false,
 //   },
-// ];
-
-// interface IKilled {
-//   id: number;
-//   name: string;
-// }
-
-// let person: Iperson = {
-//   id: 1,
-//   name: "Toni Montano",
-//   job: "Gangster",
-//   killed: [
-//     {
-//       id: 1,
-//       name: "Friend",
-//     },
-//   ],
-// };
-
-// practice
-// let arr: (string | number | boolean)[] = [
-//   "JavaScript",
-//   "TypeScript",
-//   12,
-//   23,
-//   true,
 // ];
 
 // interface IUser {
 //   id: number;
 //   name: string;
-//   action: boolean;
-//   about: IAbout[];
+//   job: string;
+//   married: boolean;
+//   address: IAddress[];
 // }
-// interface IAbout {
-//   age: number;
+// interface IAddress {
+//   country: string;
+//   city: string;
 // }
-// let arr: IUser[] = [
-//   {
-//     id: 1,
-//     name: "Done",
-//     action: true,
-//     about: [
-//       {
-//         age: 10,
-//       },
-//     ],
-//   },
-// ];
+
+// const user: IUser = {
+//   id: 1,
+//   name: "Lion",
+//   job: "developer",
+//   married: true,
+//   address: [
+//     {
+//       country: "Kyrgyzstan",
+//       city: "bishkek",
+//     },
+//   ],
+// };
+
+// interface IUser {
+//   id: number;
+//   name: string;
+//   job: string;
+//   married: boolean;
+//   address: {
+//     country: string;
+//     city: string;
+//   }[];
+// }
+
+// const user: IUser = {
+//   id: 1,
+//   name: "Lion",
+//   job: "developer",
+//   married: true,
+//   address: [
+//     {
+//       country: "Kyrgyzstan",
+//       city: "bishkek",
+//     },
+//   ],
+// };
